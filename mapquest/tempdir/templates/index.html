@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Insert Origin and Destination</h2>
+
+<form method="POST">
+  <label for="fname">Origin:</label><br>
+  <input type="text" id="orig" name="orig" value{{request.form.orig}}><br>
+  <label for="lname">Destination:</label><br>
+  <input type="text" id="dest" name="dest" value{{request.form.dest}}><br>
+  <input type="submit" id="button" value="Submit">
+  <p>Directions from {{orig}} to {{dest}}</p>
+  <p>Trip Duration      : {{tripDuration}}</p>
+  <p>Kilometers         : {{kilometers}}</p>
+  <p>Fuel Used (Ltr)    : {{fuelUsed}}</p>
+  <p>Toll Roads         : {{toll}}</p>
+  <p>Seasonal Closure   : {{seasonal}}</p>
+  <p>Cross Country      : {{country}}</p>
+  <p>Dest Latitude      : {{latitude}}</p>
+  <p>Dest Longitude     : {{longitude}}</p>
+</form>
+</body>
+</html>
